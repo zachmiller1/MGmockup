@@ -4,17 +4,19 @@
 
 * {
 	box-sizing: border-box;
-	font-family: "Times New Roman", serif;
+	font-family: 'Times New Roman', Times, serif;
 	margin: 0;
 	padding: 0;
 }
 
-h1, h2, h3, a {
+h2, h3, a {
 	font-family: 'Montserrat', sans-serif;
 }
 
 h1 {
 	margin: 0;
+	font-family: 'Times New Roman', Times, serif;
+	font-weight: normal;
 }
 
 a {
@@ -75,8 +77,12 @@ a {
 /* ---------- Buttons ------------ */
 
 .whiteButton {
+	display: inline-block;
 	color: #005ea5;
 	background-color: #fff;
+	padding: .625em;
+	box-shadow: 0px 3px 3px #222;
+	margin-bottom: .625em;
 }
 
 .blueButton {
@@ -153,6 +159,36 @@ a {
 }
 
 
+/*	--------------------------------------------------
+				Main CTA
+-------------------------------------------------- */
+
+.mainCTA {
+	background: #005ea5 url();
+	padding: 2em 0;
+}
+
+.containerCTA {
+	width: 75%;
+	margin: 0 auto;
+}
+
+.mainCTA h1, .mainCTA p {
+	color: #fff;
+	margin-bottom: 30px;
+}
+
+.mainCTA p {
+	line-height: 1.5;
+	text-shadow: 1px 1px #222;
+	font-size: 1.125em;
+}
+
+.mainCTA h1 {
+	text-shadow: 1px 2px #222;
+	font-size: 2.75em;
+	line-height: 1.25;
+}
 
 
 
