@@ -9,6 +9,10 @@
 	padding: 0;
 }
 
+body {
+	background: url('../images/satinweave_@2X.png') repeat top left;
+}
+
 h2, h3, a {
 	font-family: 'Montserrat', sans-serif;
 }
@@ -45,6 +49,7 @@ hr {
 	background: #eee;
 	margin: 0 auto;
 	border: none;
+	border-radius: 2px;
 }
 
 
@@ -52,16 +57,16 @@ hr {
 				Framework
 -------------------------------------------------- */
 
-.siteContainer {
-	width: 960px;
-	margin: 0 auto;
-}
-
 .container {
 	width: 75%;
 	margin: 0 auto;
 	padding: 2em 0;
 	text-align: center;
+}
+
+.widthContainer {
+	width: 90%;
+	margin: 0 auto;
 }
 
 .right {
@@ -79,12 +84,12 @@ hr {
 .bar {
 	background: #005ea5;
 	width: 100%;
-	padding: .625em 0;
+	padding: 0.625em 0;
 }
 
 .bar a {
 	color: #a7cbe3;
-	font-size: .875em;
+	font-size: 0.75em;
 }
 
 
@@ -97,6 +102,13 @@ hr {
 	padding: .625em;
 	box-shadow: 0px 3px 3px #222;
 	margin-bottom: .625em;
+	border: 1px solid #fff;
+}
+
+.whiteButton:hover {
+	color: #fff;
+	background-color: #005ea5;
+	border: 1px solid #fff;
 }
 
 .blueButton {
@@ -108,6 +120,13 @@ hr {
 	margin-top: 1em;
 	font-size: .875em;
 	display: inline-block;
+	border: 1px solid #005ea5;
+}
+
+.blueButton:hover {
+	color: #005ea5;
+	background-color: #fff;
+	border: 1px solid #005ea5;
 }
 
 /* ---------- Clearfix ------------ */
@@ -146,6 +165,14 @@ hr {
 	text-align: center;
 }
 
+.left {
+	float: none;
+}
+
+.topBar .loginButton {
+	display: none;
+}
+
 
 
 /*	--------------------------------------------------
@@ -171,8 +198,8 @@ hr {
 				Main Nav
 -------------------------------------------------- */
 
-.mainNav {
-	background: #ccbea2;
+.mainNav { 
+	background-color: #ccbea2;
 	text-align: center;
 }
 
@@ -365,12 +392,23 @@ hr {
 .bar img {
 	width: 100px; 
 	height: 40px; 
-	display: inline-block;
+	display: block;
 	background: url(../images/MGlogo.png) no-repeat 0 0;
 	background-size: contain;
 	margin: 0 1.25em;
 }
 
+.bar li {
+	list-style: none;
+	display: inline-block;
+	vertical-align: middle;
+	/*float: left;*/
+}
+
+.bar a {
+	display: block;
+	/*padding-top: 20px;*/
+}
 
 
 
@@ -407,18 +445,269 @@ hr {
 @media screen and (min-width: 768px) {
 
 
+	/* --------------
+		Font Styles
+	----------------- */
 
+	h2 {
+		font-size: 2.5em;
+	}
 
+	/* --------------
+		Framework
+	----------------- */
 
+	.whiteButton {
+		font-size: 1.25em;
+	}
 
+	.blueButton {
+		font-size: 1em;
+	}
 
+	hr {
+		height: 5px;
+		color: #777;
+		background: #ddd;
+	}
 
-
-
-
+	/* --------------
+		Top Bar
+	----------------- */
 	
+	.widthContainer .right {
+		display: block;
+	}
+
+	.left {
+		float: left;
+	}
+
+	.topBar a {
+		padding: .875em 0;
+		font-size: 1em;
+	}
+
+
+
+	/* --------------
+		Main Logo
+	----------------- */
+
+	.mainLogo a {
+		width: 400px; /* Original 874px */
+		height: 158px; /* Original 375px */
+		text-indent: -9999px;
+		display: block;
+		background: url(../images/MGlogo.png) no-repeat 0 0;
+		background-size: contain;
+		margin: 0 auto;
+	}	
+
+
+
+
+	/* --------------
+		Main Nav
+	----------------- */
+
+	.mobileNav li {
+		display: none;
+	}
+
+	.navItems {
+		display: block;
+	}
+
+	.navItems ul {
+		display: block;
+	}
+
+	.navItems li {
+		display: inline;
+	}
+
+	.navItems a {
+		display: inline-block;
+		padding: 1.375em .75em;
+		font-size: 1.125em;
+	}
+
+
+	/* --------------
+		Main CTA
+	----------------- */
+
+	.mainCTA h1 {
+		font-size: 3.5em;
+	}
+
+	.mainCTA p {
+		font-size: 1.5em;
+		letter-spacing: .5;
+	}
+
+
+	/* --------------
+		Practice Areas
+	----------------- */
+	
+	.practiceAreas p {
+		font-size: 1.125em;
+	}
+
+	/* --------------
+		Our Team CTA
+	----------------- */
+
+	.teamCTA h1 {
+		font-size: 2.75em;
+	}
+
+	.teamCTA p {
+		font-size: 1.375em;
+		line-height: 1.3;
+	}
+
+	/* --------------
+		Featured
+	----------------- */
+	
+	.featured blockquote {
+		font-size: 1.25em;
+	}
+
+	/* --------------
+		News
+	----------------- */
+
+	.news p {
+		font-size: 1.25em;
+	}
+
+
+
 }
 
+/*	--------------------------------------------------
+				1024px
+-------------------------------------------------- */
+
+@media screen and (min-width: 1024px) {
+
+	/* --------------
+		Fonts
+	----------------- */
+
+	h2 {
+		font-size: 3em;
+	}
+
+	h3 {
+		font-size: 1.5em;
+	}
+
+
+	/* --------------
+		Framework
+	----------------- */
+
+	.maxWidth {
+		max-width: 1024px;
+	}
+
+	/* --------------
+		Practice Areas
+	----------------- */
+
+	.practiceAreas p {
+		font-size: 1.5em;
+	}
+
+	.area {
+		display: inline-block;
+		width: 30%;
+		padding: 0 2%;
+		vertical-align: top;
+	}
+
+	.areas a {
+		display: inline-block;
+	}
+	
+
+
+	/* --------------
+		Main Nav
+	----------------- */
+
+	.navItems a {
+		padding: 1.375em 1.5em;
+	}
+
+	/* --------------
+		Featured
+	----------------- */
+	.featured blockquote {
+		clear: both;
+	}
+
+	.featuredLawyer {
+		text-align: left;
+		padding-left: 185px;
+		width: 60%;
+		margin: 0 auto;
+	}
+	.featuredLawyer img {
+		float:left;
+		margin-left: -185px;
+	}
+
+	.featured h3 {
+		width: 60%;
+		text-align: left;
+		margin: 1.5em auto 0;
+
+	}
+
+	.featured p {
+		padding-top: 50px;
+	}
+
+
+	/* --------------
+		News
+	----------------- */
+	.recentNews p {
+		font-size: 1.25em;
+	}
+
+	
+	/* --------------
+		Footer
+	----------------- */
+
+	.footerCol {
+		display: inline-block;
+		text-align: left;
+		width: 32%;
+		padding: 0 2%;
+		vertical-align: middle;
+	}
+
+	/* --------------
+		Bottom Bar
+	----------------- */
+
+	.bar a {
+		font-size: 1em;
+	}
+
+	.bar a:hover {
+		color: #fff;
+	}
+
+}
 
 
 
