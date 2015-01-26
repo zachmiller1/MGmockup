@@ -60,7 +60,7 @@ hr {
 .container {
 	width: 75%;
 	margin: 0 auto;
-	padding: 2em 0;
+	padding: 3em 0;
 	text-align: center;
 }
 
@@ -511,26 +511,12 @@ hr {
 		Main Nav
 	----------------- */
 
-	.mobileNav li {
+	li .loginNav {
 		display: none;
 	}
 
-	.navItems {
-		display: block;
-	}
-
-	.navItems ul {
-		display: block;
-	}
-
-	.navItems li {
-		display: inline;
-	}
-
-	.navItems a {
-		display: inline-block;
-		padding: 1.375em .75em;
-		font-size: 1.125em;
+	.mobileNav {
+		font-size: 1.5em;
 	}
 
 
@@ -552,9 +538,30 @@ hr {
 		Practice Areas
 	----------------- */
 	
-	.practiceAreas p {
-		font-size: 1.125em;
+	.areaContainer {
+		width: 90%;
 	}
+
+	.practiceAreas p {
+		font-size: 1.5em;
+	}
+
+	.practiceAreas a>p {
+		font-size: 1.25em;
+	}
+
+	.areas a {
+		display: inline-block;
+		width: 49%;
+		padding: 0 2%;
+		vertical-align: top;
+	}
+
+	.areas {
+		padding: 3.125em 0;
+	}
+
+
 
 	/* --------------
 		Our Team CTA
@@ -606,6 +613,34 @@ hr {
 	h3 {
 		font-size: 1.5em;
 	}
+
+	/* --------------
+		Nav
+	----------------- */
+
+
+	.mobileNav li {
+		display: none;
+	}
+
+	.navItems {
+		display: block;
+	}
+
+	.navItems ul {
+		display: block;
+	}
+
+	.navItems li {
+		display: inline;
+	}
+
+	.navItems a {
+		display: inline-block;
+		padding: 1.5em .75em;
+		font-size: 1.125em;
+	}
+
 
 
 	/* --------------
@@ -709,6 +744,49 @@ hr {
 
 }
 
+
+
+
+
+
+
+
+
+
+/*	--------------------------------------------------
+				1280px
+-------------------------------------------------- */
+
+@media screen and (min-width: 1280px) {
+
+	.maxWidth {
+		max-width: 1280px;
+	}
+
+	.areas a {
+		width: 30%;
+		padding: 2em 2em 1em;
+	}
+
+	.areas {
+		padding: 2.5em 0 3.125em;
+	}
+
+	.teamCTA p {
+		font-size: 1.75em;
+		letter-spacing: .4;
+	}
+
+	.footerContainer p {
+		font-size: 1.25em;
+	}
+
+	hr {
+		display: none;
+	}
+
+
+}
 
 
 
