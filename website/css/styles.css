@@ -21,6 +21,8 @@ h1 {
 
 h2 {
 	font-size: 1.75em;
+	font-weight: 700;
+	text-shadow: 1px 1.5px .5px #ccc;
 }
 
 h2, h3 {
@@ -29,6 +31,11 @@ h2, h3 {
 
 a {
 	text-decoration: none;
+}
+
+h3 {
+	font-weight: 400;
+	text-shadow: .5px .5px #777;
 }
 
 hr {
@@ -98,7 +105,9 @@ hr {
 	padding: .625em 1.5em;
 	box-shadow: 0px 3px 3px #222;
 	margin-bottom: .625em;
+	margin-top: 1em;
 	font-size: .875em;
+	display: inline-block;
 }
 
 /* ---------- Clearfix ------------ */
@@ -196,7 +205,8 @@ hr {
 -------------------------------------------------- */
 
 .mainCTA {
-	background: #005ea5 url();
+	background: #005ea5 url('../images/CTAbackground.jpg') no-repeat;
+	background-size: cover;
 }
 
 .mainCTA h1, .mainCTA p {
@@ -227,12 +237,10 @@ hr {
 	line-height: 1.3;
 }
 
-.practiceAreas
-
 .areas a {
 	display: block;
 	text-align: center;
-	margin-bottom: 2em;
+	margin-bottom: 1em;
 	color: #222;
 	font-family: 'Times New Roman', Times, serif;
 	font-size: 1.25em;
@@ -243,7 +251,8 @@ hr {
 -------------------------------------------------- */
 
 .teamCTA {
-	background: #005ea5 url();
+	background: #005ea5 url('../images/TEAMbackground.jpg') no-repeat;
+	background-size: cover;
 }
 
 .teamCTA h1, .teamCTA p {
@@ -284,6 +293,7 @@ hr {
 .featured img {
 	margin: .675em 0 1.5em;
 	padding: 1em;
+	background: #fff;
 	border: 10px solid #c8b99a;
   	-webkit-box-shadow: 3px 3px 3px #777;
     -moz-box-shadow: 3px 3px 3px #777;
@@ -326,7 +336,7 @@ hr {
 }
 
 .mainFooter p {
-	text-shadow: .5px .5px #eee;
+	text-shadow: .5px .5px #ddd;
 }
 
 .mainFooter img {
@@ -362,6 +372,52 @@ hr {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*	--------------------------------------------------
+				Breakpoints
+-------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+/*	--------------------------------------------------
+				768px
+-------------------------------------------------- */
+
+@media screen and (min-width: 768px) {
+
+
+
+
+
+
+
+
+
+
+
+	
+}
 
 
 
