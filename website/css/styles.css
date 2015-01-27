@@ -201,6 +201,7 @@ hr {
 .mainNav { 
 	background-color: #ccbea2;
 	text-align: center;
+	padding-bottom: 0px; /* Add padding when clicked */
 }
 
 .mainNav a {
@@ -223,8 +224,28 @@ hr {
 }
 
 .navItems {
-	display: none;
+	display: none; /* Target for toggle */
 }
+
+.navItems a {
+	display: block;
+	padding: 1em 0;
+	background: #a7cbe3;
+}
+
+.navItems ul {
+	border: 1px solid #222;
+}
+
+.navItems li {
+	list-style: none;
+	border-bottom: 1px solid #222;
+}
+
+.navItems li:last-child {
+	border-bottom: none;
+}
+
 
 
 /*	--------------------------------------------------
